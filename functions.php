@@ -30,6 +30,8 @@ function empty_wp_theme_setup() {
  
     /**
      * Enable support for post thumbnails and featured images.
+     * 
+     * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
     add_theme_support( 'post-thumbnails' );
 
@@ -37,6 +39,13 @@ function empty_wp_theme_setup() {
     add_theme_support( 'editor-styles' );
     add_theme_support( 'html5', array('style','script', ) );
     add_theme_support( 'automatic-feed-links' );
+
+    /**
+	 * Add support for core custom logo.
+	 *
+	 * @link https://developer.wordpress.org/themes/functionality/custom-logo/
+	 */
+	add_theme_support( 'custom-logo' );
  
     /**
      * Add support for two custom navigation menus.
