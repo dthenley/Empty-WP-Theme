@@ -9,6 +9,6 @@
 <body <?php body_class(); ?>>
     <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', '_empty-wp-theme' ); ?></a>
 
-    <header>
+    <header class="site-header">
         <nav></nav>
     </header>
