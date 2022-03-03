@@ -1,16 +1,24 @@
     <footer class="site-footer">
-        <?php the_custom_logo(); ?>
-        
-        <?php
-        wp_nav_menu(
-            array(
-                'theme_location' => 'footer',
-                'menu_id'        => 'footer-menu',
-                'container'      => 'nav'
-            )
-        );
-        ?>
+        <nav>
 
+            <?php the_custom_logo(); ?>
+            
+            <?php
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'footer',
+                    'menu_id'        => 'footer-menu',
+                    
+                )
+            );
+            ?>
+            <ul class="social-media">
+                <li>f</li>
+                <li>I</li>
+                <li>L</li>
+                <li>T</li>
+            </ul>
+        </nav>
     </footer>
     <div class="site-info">
         <div class="copyright-info">&copy; <?php echo date( 'Y' ); ?> <?php echo get_bloginfo( 'name' ); ?>

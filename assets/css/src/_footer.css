@@ -1,0 +1,65 @@
+.site-footer {
+  background: #000;
+  color: #fff;
+
+  & a {
+    color: inherit;
+  }
+
+  & nav {
+    max-width: var(--page-wide-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: "logo menu social";
+    align-items: center;
+
+    @media (--mobile-view) {
+      grid-template-columns: repeat(1fr 2fr);
+      grid-template-areas:
+        "logo menu"
+        "social menu";
+    }
+
+    & .custom-logo-link {
+      grid-area: logo;
+    }
+
+    & #footer-menu {
+      grid-area: menu;
+      font-size: 1.25rem;
+
+      & li {
+        margin: 0.25em 0.5em;
+      }
+    }
+    & .social-media {
+      grid-area: social;
+      justify-content: flex-end;
+    }
+
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      @media (--mobile-view) {
+        display: block;
+      }
+
+      & a {
+        margin-left: 1em;
+        text-decoration: none;
+
+        &,
+        &:visited {
+          color: inherit;
+        }
+      }
+    }
+  }
+}

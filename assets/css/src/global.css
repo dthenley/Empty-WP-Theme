@@ -1,6 +1,7 @@
 @import "_variables.css";
 @import "_custom-media-query.css";
 @import "_header.css";
+@import "_footer.css";
 
 /**
  * 1. Add border box sizing in all browsers (opinionated).
@@ -22,6 +23,10 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Will need to be moved to its own file */
