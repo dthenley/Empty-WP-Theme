@@ -88,6 +88,9 @@ add_action( 'widgets_init', 'empty_wp_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function empty_wp_theme_scripts() {
+
+	wp_enqueue_style( 'empty_wp_global-theme-styles', get_template_directory_uri() . '/assets/css/global.css', array(), EMPTY_WP_THEME_VERSION );
+
 	wp_enqueue_style( 'empty_wp_theme-style', get_stylesheet_uri(), array(), EMPTY_WP_THEME_VERSION );
 
     wp_enqueue_script( 'empty_wp_theme-script', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), EMPTY_WP_THEME_VERSION, true );
