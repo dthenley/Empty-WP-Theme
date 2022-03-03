@@ -67,7 +67,72 @@ function empty_wp_theme_setup() {
      * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/
      */
     add_theme_support( 'align-wide' ); // Add wide and full width alignments.
-    
+
+    /**
+    * Add support custom font sizes.
+    *
+    * Add the line below to disable the custom color picker in the editor.
+    * add_theme_support( 'disable-custom-font-sizes' );
+    */  
+    add_theme_support( 'disable-custom-font-sizes' );
+    add_theme_support(
+        'editor-font-sizes',
+        array(
+            array(
+                'name'      => __( 'Paragraph', 'empty-wp-theme' ),
+                'shortName' => __( 'P', 'empty-wp-theme' ),
+                'size'      => 18,
+                'slug'      => 'paragraph',
+            ),
+            array(
+                'name'      => __( 'Heading 1', 'empty-wp-theme' ),
+                'shortName' => __( 'h1', 'empty-wp-theme' ),
+                'size'      => 'clamp(2.5em,4vw,4em)',
+                'slug'      => 'h1',
+            ),
+            array(
+                'name'      => __( 'Heading 2', 'empty-wp-theme' ),
+                'shortName' => __( 'h2', 'empty-wp-theme' ),
+                'size'      => 'clamp(1.666em,3vw,2.8em)',
+                'slug'      => 'h2',
+            ),
+            array(
+                'name'      => __( 'Heading 3', 'empty-wp-theme' ),
+                'shortName' => __( 'h3', 'empty-wp-theme' ),
+                'size'      => 'clamp(1.5em,2.7vw,2.25em)',
+                'slug'      => 'h3',
+            ),
+            array(
+                'name'      => __( 'Heading 4', 'empty-wp-theme' ),
+                'shortName' => __( 'h4', 'empty-wp-theme' ),
+                'size'      => 'clamp(1em,2vw,1.5em)',
+                'slug'      => 'h4',
+            ),
+            array(
+                'name'      => __( 'Heading 5', 'empty-wp-theme' ),
+                'shortName' => __( 'h5', 'empty-wp-theme' ),
+                'size'      => 19,
+                'slug'      => 'h5',
+            ),
+            array(
+                'name'      => __( 'Heading 6', 'empty-wp-theme' ),
+                'shortName' => __( 'h6', 'empty-wp-theme' ),
+                'size'      => 17,
+                'slug'      => 'h6',
+            ),
+        )
+    );
+
+
+    add_theme_support( 'disable-custom-gradients' );
+    add_theme_support( 'custom-line-height' );
+
+    /* Disables default Patterns */
+    remove_theme_support( 'core-block-patterns' );
+
+    /* Add Styling to block content */
+    add_theme_support( 'editor-styles' );
+    add_editor_style( 'assets/css/editor-styles.css' );
 
  
 }
