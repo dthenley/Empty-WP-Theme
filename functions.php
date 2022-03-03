@@ -57,7 +57,7 @@ function empty_wp_theme_setup() {
      */
     register_nav_menus( array(
         'primary'   => __( 'Primary Menu', 'empty-wp-theme' ),
-        'secondary' => __('Secondary Menu', 'empty-wp-theme' )
+        'secondary' => __( 'Footer Menu', 'empty-wp-theme' )
     ) );
  
 }

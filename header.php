@@ -7,8 +7,19 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', '_empty-wp-theme' ); ?></a>
+    <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'empty-wp-theme' ); ?></a>
 
-    <header class="site-header">
-        <nav></nav>
+    <header class="site-header">        
+        <?php the_custom_logo(); ?>
+        <button id="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'empty-wp-theme' ); ?></button>
+        
+        <?php
+        wp_nav_menu(
+            array(
+                'theme_location' => 'primary',
+                'menu_id'        => 'primary-menu',
+                'container'      => 'nav'
+            )
+        );
+        ?>
     </header>
