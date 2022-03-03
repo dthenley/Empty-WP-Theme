@@ -4,6 +4,9 @@
 !/assets/css/
 /assets/css/*
 !/assets/css/src/
+!/assets/js/
+/assets/js/*
+!/assets/js/src/
 
 !/inc/
 !/template-parts/
