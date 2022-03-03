@@ -23,7 +23,6 @@
     "cssnano": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
-    "gulp-watch": "^5.0.1",
     "postcss": "^8.4.7",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6"
