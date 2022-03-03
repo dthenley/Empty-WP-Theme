@@ -1,0 +1,30 @@
+{
+  "name": "Empty-WP-Theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dthenley/Empty-WP-Theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dthenley/Empty-WP-Theme/issues"
+  },
+  "homepage": "https://github.com/dthenley/Empty-WP-Theme#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.4.7",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6"
+  },
+  "dependencies": {}
+}
