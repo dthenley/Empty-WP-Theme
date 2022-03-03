@@ -1,6 +1,6 @@
 @import "_variables.css";
 @import "_custom-media-query.css";
-@import "_page-navigation.css";
+@import "_header.css";
 
 /**
  * 1. Add border box sizing in all browsers (opinionated).
@@ -22,4 +22,20 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Will need to be moved to its own file */
+#primary > div {
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Does not effect the block editor back end */
+.alignwide {
+  max-width: var(--page-wide-width) !important;
+}
+
+.alignfull {
+  max-width: 100% !important;
 }

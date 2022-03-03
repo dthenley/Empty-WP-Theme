@@ -59,6 +59,16 @@ function empty_wp_theme_setup() {
         'primary'   => __( 'Primary Menu', 'empty-wp-theme' ),
         'secondary' => __( 'Footer Menu', 'empty-wp-theme' )
     ) );
+
+
+    /**
+     * Block Specific. Will/can be replaced by theme.json
+     * 
+     * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/
+     */
+    add_theme_support( 'align-wide' ); // Add wide and full width alignments.
+    
+
  
 }
 endif; // empty_wp_theme_setup
@@ -102,3 +112,4 @@ function empty_wp_theme_scripts() {
 	// }
 }
 add_action( 'wp_enqueue_scripts', 'empty_wp_theme_scripts' );
+
