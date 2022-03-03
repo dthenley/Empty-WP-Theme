@@ -1,5 +1,10 @@
 # Ignore Everything:
 !/assets/
+/assets/*
+!/assets/css/
+/assets/css/*
+!/assets/css/src/
+
 !/inc/
 !/template-parts/
 
