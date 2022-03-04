@@ -3,6 +3,7 @@
 @import "_typography.css";
 @import "_header.css";
 @import "_footer.css";
+@import "_buttons.css";
 
 /**
  * 1. Add border box sizing in all browsers (opinionated).
@@ -19,6 +20,8 @@
 body {
   margin: 0;
   background: white;
+  font-size: 1.125rem;
+  line-height: 1.4;
 }
 
 img {
