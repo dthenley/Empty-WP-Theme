@@ -44,6 +44,7 @@ function empty_wp_theme_setup() {
     add_theme_support( 'editor-styles' );
     add_theme_support( 'html5', array('style','script', ) );
     add_theme_support( 'automatic-feed-links' );
+    add_theme_support( 'custom-spacing' );
 
     /**
 	 * Add support for core custom logo.
@@ -177,4 +178,17 @@ function empty_wp_theme_scripts() {
 	// }
 }
 add_action( 'wp_enqueue_scripts', 'empty_wp_theme_scripts' );
+
+/**
+ * JS to control gutenberg editor.
+ */
+function editor_assets() {
+    wp_enqueue_script(
+        'remove-block-styles',
+        get_template_directory_uri() . '/assets/js/blocks/block-styles.js',
+        array ( 'wp-blocks', 'wp-edit-post' ),
+        EMPTY_WP_THEME_VERSION
+    );
+}
+add_action( 'enqueue_block_editor_assets', 'editor_assets' );
 
