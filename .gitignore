@@ -1,12 +1,15 @@
 # Ignore Everything:
 !/assets/
-/assets/*
-!/assets/css/
 /assets/css/*
 !/assets/css/src/
-!/assets/js/
-/assets/js/*
-!/assets/js/src/
+
+
+# /assets/*
+# !/assets/css/
+# !/assets/js/
+# # /assets/js/*
+# # !/assets/js/src/
+# !/assets/images/
 
 !/inc/
 !/template-parts/
