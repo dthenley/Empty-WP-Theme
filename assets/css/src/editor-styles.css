@@ -1,4 +1,5 @@
 @import "_typography.css";
+@import "_buttons.css";
 
 .editor-post-title {
   font-size: revert;
