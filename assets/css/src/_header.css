@@ -24,7 +24,7 @@
       }
     }
 
-    & .menu-primary-container {
+    & .primary-menu-container {
       @media (--mobile-view) {
         display: none;
         flex-basis: 100%;
@@ -34,7 +34,7 @@
         }
       }
 
-      & > ul {
+      & ul {
         list-style: none;
         padding: 0;
         margin: 0;
@@ -44,6 +44,10 @@
         @media (--mobile-view) {
           display: block;
           text-align: center;
+        }
+
+        & ul li {
+          flex-basis: 100%;
         }
 
         & a {
