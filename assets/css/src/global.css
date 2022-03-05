@@ -4,6 +4,7 @@
 @import "_header.css";
 @import "_footer.css";
 @import "_buttons.css";
+@import "blocks/blocks.css";
 
 /**
  * 1. Add border box sizing in all browsers (opinionated).
