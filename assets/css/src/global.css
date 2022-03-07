@@ -35,10 +35,15 @@ a {
 }
 
 /* Will need to be moved to its own file */
-#primary > div {
+
+/* Make sure all content fits in the page width and centered on page.
+Same rule in the blocks.css */
+#primary > * {
   max-width: var(--page-width);
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* Does not effect the block editor back end */
